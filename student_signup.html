@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="student.css">
+    <title>Student Sign Up </title>
+</head>
+<body>
+    <header>
+        <h1> Student Sign Up </h1>
+        <nav class="navbar">
+            <a href="student_signup.html" target="_blank"> Sign up </a>
+            <a href="student_login.html" target="_blank"> Log in </a>
+            <a href="student_profile.html" target="_blank"> Update Profile </a>
+            <a href="student_dashboard.html" target="_blank"> Dashboard </a>
+            <a href="student_logout.html" target="_blank"> Log out</a>
+            <a href="startup_page.html" target="_blank"> Main Menu</a>
+        </nav>
+    </header> <br>
+    <main>
+        <div class="functions">
+            <form id="studentSignupForm" novalidate>
+                <label for="studentName">Full Name:</label>
+                <input type="text" id="studentName" name="name" required placeholder="Enter full name">
+                
+                <label for="studentEmail">Email:</label>
+                <input type="email" id="studentEmail" name="email" required placeholder="student@example.com">
+                
+                <label for="studentPassword">Password:</label>
+                <input type="password" id="studentPassword" name="password" required minlength="6" placeholder="Enter password">
+                
+                <div class="button-container">
+                    <button type="submit" class="button">Sign Up</button>
+                </div>
+            </form>
+        </div><br>
+    </main> 
+
+    <script src="student_validation.js"></script>
+
+    <footer>
+        <p>&copy; 2025 Internship Management System</p>
+    </footer>
+</body>
+</html>

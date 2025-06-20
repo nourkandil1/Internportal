@@ -1,0 +1,271 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0; /* Remove default margin */
+    background-color: #f4f4f4; /* Optional: background color for the body */
+}
+
+header {
+    color: white;
+    background-color: #003580;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main {
+    display: flex;
+    justify-content: center; /* center horizontally */
+    align-items: center;     /* center vertically */
+    padding: 20px;
+}
+
+h1 {
+    color: white;
+    text-align: left;
+    margin-left: 30px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Spread links from left to right */
+    align-items: center; /* Vertically center links */
+    padding: 0 20px;
+}
+
+.navbar a {
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.navbar a:hover {
+    background-color: #005ea2; /* Button hover color */
+    padding: 20px;
+    border: 1px solid white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.154);
+}
+
+footer {
+    text-align: center;
+    color: #003580;
+    position: sticky;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+    font-size: 18px;
+}
+
+.functions {
+    background-color: white; /* Background color for the form */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 500px; /* Set a fixed width for the form */
+    min-height: 400px; /* Set a minimum height for the form */
+    display: flex; /* Make the functions box a flex container */
+    flex-direction: column; /* Stack children vertically */
+    justify-content: center; /* Center children vertically */
+    align-items: center; /* Center children horizontally */
+}
+
+input, textarea {
+    width: 100%;
+    height: 30px;
+    padding: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: 'Times New Roman';
+    text-align: left;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form{
+    color: black;
+    text-align: left;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 10px 15px;
+    width: 400px;
+    min-height: auto;
+}
+
+.button-container {
+    display: flex; /* Use flexbox for alignment */
+    justify-content: flex-end; /* Aligns the button to the right */
+    margin-top: 20px; /* Optional: Add some space above the button */
+}
+
+.button {
+    background-color: #003580; /* Button background color */
+    color: white; /* Button text color */
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-family: 'Times New Roman';
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+    width: fit-content; /* Adjust width to fit content */
+    margin: 0 auto; /* Center the button */
+}
+
+.button a {
+    color: white; /* Default color */
+    text-decoration: none; /* Remove underline */
+}
+
+.button a:visited {
+    color: white; /* Color after visiting */
+}
+
+.button:hover {
+    background-color: #005ea2; /* Button hover color */
+}
+
+.dashboard {
+    display: flex;
+    gap: 20px;                  /* Space between cards */
+    justify-content: space-between; /* Spread links from left to right */
+    align-items: center; /* Vertically center links */
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.dashboard a {
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.dashboard a:hover {
+    padding: 20px;
+    border: 1px solid white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.154);
+}
+
+h2, h3{
+    color: #003580;
+    text-align: center;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 600px;
+    height: 250px;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+    background-color: #f4f4f4;
+    color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+    background-color: #005ea2;
+    color: white;
+    transform: rotateY(180deg);
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    text-align: center;
+    padding: 20px; /* Add padding for better spacing */
+    font-size: 18px; /* Adjust font size for readability */
+}
+
+.flip-card-back img {
+    max-width: 90%;
+    max-height: 70%;
+    border-radius: 8px;
+    object-fit: contain;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+}
+.internship_card {
+    border: 2px solid #003580;
+    border-radius: 15px;
+    width: 350px;
+    height: 200px;
+    text-align: center;
+    display: flex;                 /* Make it a flex container */
+    flex-direction: column;        /* Stack children vertically */
+    justify-content: center;       /* Center vertically */
+    align-items: center;           /* Center horizontally */
+    margin: 0 auto;
+    box-sizing: border-box;        /* Include paddings/borders in width/height */
+    padding: 10px;                 /* Optional padding inside */
+}
+
+p{
+    color: #003580;
+}
+
+ul{
+    color: #003580;
+    text-align: left;
+}
+
+.applyform{
+    color: #003580;
+}
+
+label, input{
+    color: #003580;
+}
+
+.intern_details{
+    border: 2px solid #003580;
+    border-radius: 15px;
+    width: 400px;
+    height: 450px;
+    text-align: center;
+    display: flex;                 /* Make it a flex container */
+    flex-direction: column;        /* Stack children vertically */
+    justify-content: center;       /* Center vertically */
+    align-items: center;           /* Center horizontally */
+    margin: 0 auto;
+    box-sizing: border-box;        /* Include paddings/borders in width/height */
+    padding: 10px;    
+}

@@ -1,0 +1,144 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0; /* Remove default margin */
+    background-color: #f4f4f4; /* Optional: background color for the body */
+}
+
+header {
+    color: white;
+    background-color: #003580;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main {
+    text-align: center;     /* center vertically */
+    padding: 20px;
+}
+
+h1 {
+    color: white;
+    text-align: left;
+    margin-left: 30px;
+}
+
+h3{
+    color: #003580;
+    text-align: center;
+    margin-bottom: 20px; /* Add margin below the h3 for spacing */
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Spread links from left to right */
+    align-items: center; /* Vertically center links */
+    padding: 0 20px;
+}
+
+.navbar a {
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.navbar a:hover {
+    background-color: #005ea2; /* Button hover color */
+    padding: 20px;
+    border: 1px solid white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.154);
+}
+
+footer {
+    text-align: center;
+    color: #003580;
+    position: sticky;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+    font-size: 18px;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 300px;          /* Fixed width */
+    height: 250px;         /* Fixed height to match design */
+    perspective: 1000px;
+    box-sizing: border-box;
+}
+
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+    background-color: #f4f4f4;
+    color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+    background-color: #003580;
+    color: white;
+    transform: rotateY(180deg);
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    text-align: center;
+    padding: 20px; /* Add padding for better spacing */
+    font-size: 18px; /* Adjust font size for readability */
+}
+
+.classification {
+    display: flex;
+    flex-wrap: wrap;          /* Allow cards to wrap to next line */
+    gap: 20px; /* Space between cards */
+    justify-content: center; /* Center the cards horizontally */
+    align-items: center; /* Vertically center links */
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    max-width: 1200px;        /* Optional max width */
+    margin: 0 auto;           /* Center container horizontally */
+}
+
+.classification a {
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.classification a:hover {
+    padding: 20px;
+    border: 1px solid white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.154);
+}

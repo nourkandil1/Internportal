@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="student.css">
+    <title> Your Applications </title>
+</head>
+<body>
+    <header>
+        <h1> Apply for Internships </h1>
+        <nav class="navbar">
+            <a href="student_signup.html" target="_blank"> Sign up </a>
+            <a href="student_login.html" target="_blank"> Log in </a>
+            <a href="student_profile.html" target="_blank"> Update Profile </a>
+            <a href="student_dashboard.html" target="_blank"> Dashboard </a>
+            <a href="student_logout.html" target="_blank"> Log out</a>
+        </nav>
+    </header>
+    <main>
+        <form id="applyForm" novalidate>
+            <h3> Please Upload required files: </h3>
+            <ul>
+                <li> Resume </li>
+                <li> Transcripts </li>
+                <li> Letters of Recommendation </li>
+                <li> Certifications </li>
+            </ul>
+            <label for="resume">Upload Resume (PDF)</label>
+            <input type="file" id="resume" name="resume" accept=".pdf" required>
+            <div class="button">Submit Application</div> <br>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2025 Internship Management System</p>
+    </footer>
+</body>
+</html>

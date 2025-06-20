@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="student.css">
+    <title>Student Profile </title>
+</head>
+<body>
+    <header>
+        <h1> Edit Profile </h1>
+        <nav class="navbar">
+            <a href="student_signup.html" target="_blank"> Sign up </a>
+            <a href="student_login.html" target="_blank"> Log in </a>
+            <a href="student_profile.html" target="_blank"> Update Profile </a>
+            <a href="student_dashboard.html" target="_blank"> Dashboard </a>
+            <a href="student_logout.html" target="_blank"> Log out</a>
+        </nav>
+    </header>
+    <main>
+        <div class="functions">
+            <form id="studentProfileForm" novalidate>
+                <label for="studentName">Full Name</label>
+                <input type="text" id="studentName" name="name" required placeholder="Enter full name">
+                
+                <label for="studentEmail">Email</label>
+                <input type="email" id="studentEmail" name="email" required placeholder="student@example.com">
+                
+                <div class="button-container">
+                    <button type="submit" class="button">Update Profile</button>
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2025 Internship Management System</p>
+    </footer>
+</body>
+</html>
